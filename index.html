@@ -12,26 +12,55 @@
 <body>
 
     
-        <header style="padding-left: 20px;background: linear-gradient(-50deg, #9ccaee,#f767f0,#9ccaee);background-image: url(https://t3.ftcdn.net/jpg/06/54/65/86/360_F_654658649_E0aZl5AjvWJkVgabkNe5Xn5kog4moHIG.jpg); background-repeat: no-repeat; background-size: cover;" class="d-flex flex-wrap justify-content-center py-3">
-          
-            <img style="border-radius:5px;" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" src="./images/LOGOCityAds_v10.svg" width="
-            79ORLnQSnWxjcEucA0lw7O3Lft74BgxuVDiXWuURA19s7JwgNbDTOwiO1JiX5bAADxT7K6a4PaPZdnGebqeg1A" alt="logo"/>
-          
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          </ul>
-        </header>
+  <header class="d-flex flex-wrap align-items-center justify-content-between py-3">
+    <!-- Logo -->
+    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-3 link-body-emphasis text-decoration-none">
+        <img src="./images/LOGOCityAds_v10.svg" alt="logo" style="border-radius: 5px; height: 60px;">
+    </a>
+    <ul class="nav me-auto">
+      <li class="nav-item"><a href="#" class="nav-link">Success Jurneys</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Benefits</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
      
+  </ul>
+
+    <!-- Navigation Items -->
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">List Your Business</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Feachers</a></li>
+       
+        <li class="nav-item"><a href="#" class="nav-link" id="loginBtn">SignUp/LogIn</a></li>
+        
+    </ul>
+</header>
+
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login to Your Account</h2>
+      <form>
+          <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+      </form>
+  </div>
+</div>
+
 
 
       <!-- Search Section -->
     <section class="search-section">
-        <h1> Search for Products & Services</h1>
+        <h1> 𝖲𝖾𝖺𝗋𝖼𝗁 𝖿𝗈𝗋 𝖯𝗋𝗈𝖽𝗎𝖼𝗍𝗌 & 𝖲𝖾𝗋𝗏𝗂𝖼𝖾𝗌</h1>
         <div class="search-box">
             <input type="text" placeholder="Gulbarga" id="location">
             <input type="text" placeholder="Search for Restaurants near me" id="query">
@@ -44,7 +73,7 @@
     <!-- Categories Section -->
     
   <section class="categories"> 
-    <h2>Popular Categories</h2>
+    <h2>𝙋𝙤𝙥𝙪𝙡𝙖𝙧 <span style="color:brown;"> 𝘾𝙖𝙩𝙚𝙜𝙤𝙧𝙞𝙚𝙨</span></h2>
     <div class="category-grid">
         <div class="category-item"><img src="./images/restorents.jpeg"/>
           <p class="category-text">Restaurants</p>
@@ -64,8 +93,8 @@
         <div class="category-item"><img src="./images/hospital.webp"/>
           <p class="category-text">Hospitals</p>
         </div>
-        <div class="category-item"><img src="./images/hotel.jpg"/>
-          <p class="category-text">Restorents</p>
+        <div class="category-item"><img src="./images/painter.jpg"/>
+          <p class="category-text">Painters</p>
         </div>
         <div class="category-item"><img src="./images/repairs-services.jpeg"/>
           <p class="category-text">Repairs & Services</p>
@@ -96,112 +125,106 @@
     
 
       
-       <!-- Carousel section -->
-       <div id="myCarousel" class="carousel slide mb-6 imgc" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+      <!-- Carousel section -->
+<div id="myCarousel" class="carousel slide mb-6 imgc" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="./images/c1-img.jpeg" class="d-block w-100" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Example headline.</h1>
+          <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="./images/education.jpeg" class="d-block w-100" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Some representative placeholder content for the second slide of the carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="./images/bg-image.jpg" class="d-block w-100" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>One more for good measure.</h1>
+          <p>Some representative placeholder content for the third slide of this carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
      <!----testimonial-->
 
+     <section class="testimonial-carousel">
+      <div class="testimonial-section">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-container">
+              <div class="testimonial-photo">
+                  <img src="https://via.placeholder.com/60" alt="User Photo">
+              </div>
+              <div class="testimonial-text">"Amazing service! The team was very supportive and delivered beyond my expectations."</div>
+              <div class="testimonial-name">John Smith</div>
+              <div class="testimonial-title">CEO at InnovateX</div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-container">
+              <div class="testimonial-photo">
+                  <img src="https://via.placeholder.com/60" alt="User Photo">
+              </div>
+              <div class="testimonial-text">"Highly recommend! The attention to detail and quick response were impressive."</div>
+              <div class="testimonial-name">Alice Johnson</div>
+              <div class="testimonial-title">Marketing Specialist</div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-container">
+              <div class="testimonial-photo">
+                  <img src="https://via.placeholder.com/60" alt="User Photo">
+              </div>
+              <div class="testimonial-text">"Exceeded my expectations. The quality of work and support were fantastic!"</div>
+              <div class="testimonial-name">Carlos Rivera</div>
+              <div class="testimonial-title">UX Designer</div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="testimonial-container">
+              <div class="testimonial-photo">
+                  <img src="https://via.placeholder.com/60" alt="User Photo">
+              </div>
+              <div class="testimonial-text">"Great experience! I felt heard and supported throughout the entire process."</div>
+              <div class="testimonial-name">Maria Gonzales</div>
+              <div class="testimonial-title">Project Manager</div>
+          </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </section>
 
-        <!-- START THE FEATURETTES -->
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-          </div>
-          <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-          </div>
-          <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <!-- /END THE FEATURETTES -->
-    
-      </div><!-- /.container -->
-    
-    
-      
-    </main>
-
-      
 
 
     <!--footer-->
-
-
   <!-- Remove the container if you want to extend the Footer to full width. -->
  <!--<div class="container my-5">-->
   
@@ -294,7 +317,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 Copyright. City Ads. All Rights Reserved.
+      © 2024 Copyright. City Ads. All Rights Reserved.
       <a class="text-white" href="#" >cityads@gmail.com</a>
     </div>
     <!-- Copyright -->
@@ -302,8 +325,19 @@
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<script>
+  $(document).ready(function(){
+    $('.testimonial-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
 
-    
+</script>
+<script src="script.js"></script>
     
 </body>
 </html>
