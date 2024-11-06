@@ -12,51 +12,56 @@
 <body>
 
     
-  <header class="d-flex flex-wrap align-items-center justify-content-between py-3">
+  <header class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-between py-3 px-3">
     <!-- Logo -->
     <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-3 link-body-emphasis text-decoration-none">
         <img src="./images/LOGOCityAds_v10.svg" alt="logo" style="border-radius: 5px; height: 60px;">
     </a>
-    <ul class="nav me-auto">
-      <li class="nav-item"><a href="#" class="nav-link">Success Jurneys</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Benefits</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
-     
-  </ul>
 
-    <!-- Navigation Items -->
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">List Your Business</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Feachers</a></li>
-       
-        <li class="nav-item"><a href="#" class="nav-link" id="loginBtn">SignUp/LogIn</a></li>
-        
-    </ul>
+    <!-- Navbar Toggle for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Left Nav Items -->
+        <ul class="nav me-auto">
+            <li class="nav-item"><a href="#testimonials" class="nav-link">Success Journeys</a></li>
+            <li class="nav-item"><a href="#benefits" class="nav-link">Benefits</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
+        </ul>
+
+        <!-- Right Nav Items -->
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">List Your Business</a></li>
+            <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="loginBtn">SignUp/LogIn</a></li>
+        </ul>
+    </div>
 </header>
-
 
 <!-- Login Modal -->
 <div id="loginModal" class="modal">
   <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Login to Your Account</h2>
+      <h2>Login</h2>
       <form>
-          <div class="form-group">
+          <div class="input-container">
               <label for="username">Username</label>
               <input type="text" id="username" name="username" placeholder="Enter your username" required>
           </div>
-          <div class="form-group">
+          <div class="input-container">
               <label for="password">Password</label>
               <input type="password" id="password" name="password" placeholder="Enter your password" required>
           </div>
-          <button type="submit" class="submit-btn">Login</button>
+          <button type="submit" class="login-btn">Login</button>
       </form>
+      <p class="footer-text">Don't have an account? <a href="#">Sign up</a></p>
   </div>
 </div>
-
-
 
       <!-- Search Section -->
     <section class="search-section">
@@ -177,53 +182,147 @@
   </button>
 </div>
 
-     <!----testimonial-->
+<!-- Benifits -->
+<section id="benefits" class="benefits-section">
+  <div class="container">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="benefit-list">
+          <!-- Benefit 1 -->
+          <div class="benefit-item">
+              <div class="benefit-icon">
+                  <img src="https://via.placeholder.com/60" alt="Benefit 1 Icon" class="icon">
+              </div>
+              <div class="benefit-content">
+                  <h3 class="benefit-title">Wide Reach</h3>
+                  <p class="benefit-description">Our platform provides businesses with visibility across multiple industries, helping you reach more customers and expand your presence.</p>
+              </div>
+          </div>
 
-     <section class="testimonial-carousel">
-      <div class="testimonial-section">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-container">
-              <div class="testimonial-photo">
-                  <img src="https://via.placeholder.com/60" alt="User Photo">
+          <!-- Benefit 2 -->
+          <div class="benefit-item">
+              <div class="benefit-icon">
+                  <img src="https://via.placeholder.com/60" alt="Benefit 2 Icon" class="icon">
               </div>
-              <div class="testimonial-text">"Amazing service! The team was very supportive and delivered beyond my expectations."</div>
-              <div class="testimonial-name">John Smith</div>
-              <div class="testimonial-title">CEO at InnovateX</div>
+              <div class="benefit-content">
+                  <h3 class="benefit-title">Easy Access</h3>
+                  <p class="benefit-description">Users can easily find your business through a simple search and explore all the relevant information they need in a user-friendly interface.</p>
+              </div>
           </div>
-          <!-- Testimonial 2 -->
-          <div class="testimonial-container">
-              <div class="testimonial-photo">
-                  <img src="https://via.placeholder.com/60" alt="User Photo">
+
+          <!-- Benefit 3 -->
+          <div class="benefit-item">
+              <div class="benefit-icon">
+                  <img src="https://via.placeholder.com/60" alt="Benefit 3 Icon" class="icon">
               </div>
-              <div class="testimonial-text">"Highly recommend! The attention to detail and quick response were impressive."</div>
-              <div class="testimonial-name">Alice Johnson</div>
-              <div class="testimonial-title">Marketing Specialist</div>
+              <div class="benefit-content">
+                  <h3 class="benefit-title">Increased Exposure</h3>
+                  <p class="benefit-description">Listing your business on our platform increases your chances of being discovered by new customers, improving your brand recognition and sales.</p>
+              </div>
           </div>
-          <!-- Testimonial 3 -->
-          <div class="testimonial-container">
-              <div class="testimonial-photo">
-                  <img src="https://via.placeholder.com/60" alt="User Photo">
+
+          <!-- Benefit 4 -->
+          <div class="benefit-item">
+              <div class="benefit-icon">
+                  <img src="https://via.placeholder.com/60" alt="Benefit 4 Icon" class="icon">
               </div>
-              <div class="testimonial-text">"Exceeded my expectations. The quality of work and support were fantastic!"</div>
-              <div class="testimonial-name">Carlos Rivera</div>
-              <div class="testimonial-title">UX Designer</div>
-          </div>
-          <!-- Testimonial 4 -->
-          <div class="testimonial-container">
-              <div class="testimonial-photo">
-                  <img src="https://via.placeholder.com/60" alt="User Photo">
+              <div class="benefit-content">
+                  <h3 class="benefit-title">Cost-Effective</h3>
+                  <p class="benefit-description">Get access to powerful marketing and business tools without breaking the bank. Our platform offers cost-effective solutions for businesses of all sizes.</p>
               </div>
-              <div class="testimonial-text">"Great experience! I felt heard and supported throughout the entire process."</div>
-              <div class="testimonial-name">Maria Gonzales</div>
-              <div class="testimonial-title">Project Manager</div>
           </div>
       </div>
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+<!-- Features -->
+
+<section id="features" class="features-section">
+  <div class="container">
+      <h2 class="section-title">Our Features</h2>
+      <div class="features-container">
+          <!-- Feature 1 -->
+          <div class="feature-item">
+              <div class="feature-icon">
+                  <!-- <img src="https://via.placeholder.com/50" alt="Feature 1 Icon" class="icon"> -->
+              </div>
+              <h3 class="feature-title">Business Listings</h3>
+              <p class="feature-description">Browse through various business listings across categories. Find the best places in town, from restaurants to service providers!</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-item">
+              <div class="feature-icon">
+                  <!-- <img src="https://via.placeholder.com/50" alt="Feature 2 Icon" class="icon"> -->
+              </div>
+              <h3 class="feature-title">User Reviews & Ratings</h3>
+              <p class="feature-description">Make informed decisions based on user reviews and ratings for each business. Trust the community to guide your choices.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-item">
+              <div class="feature-icon">
+                  <!-- <img src="https://via.placeholder.com/50" alt="Feature 3 Icon" class="icon"> -->
+              </div>
+              <h3 class="feature-title">Direct Contact</h3>
+              <p class="feature-description">Get in touch with businesses directly through their provided contact information. Easy access to phone numbers, emails, and websites!</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-item">
+              <div class="feature-icon">
+                  <!-- <img src="https://via.placeholder.com/50" alt="Feature 4 Icon" class="icon"> -->
+              </div>
+              <h3 class="feature-title">Quick Search</h3>
+              <p class="feature-description">Find what you need quickly with our advanced search functionality, ensuring you're connected with businesses in no time!</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+     <!----testimonial-->
+
+     <section id="testimonials" class="testimonials-section">
+      <div class="container">
+          <h2 class="section-title">What Our Clients Say (Success Journeys)</h2>
+          <div class="testimonial-carousel">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-item">
+                  <img src="https://via.placeholder.com/100" alt="Client 1" class="testimonial-image">
+                  <div class="testimonial-text">
+                      <p class="testimonial-message">"This platform helped our business grow exponentially. The exposure and ease of use are just amazing!"</p>
+                      <p class="testimonial-client">John Doe, CEO of Business A</p>
+                  </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonial-item">
+                  <img src="https://via.placeholder.com/100" alt="Client 2" class="testimonial-image">
+                  <div class="testimonial-text">
+                      <p class="testimonial-message">"I’ve seen a massive difference in customer engagement after using this service. Highly recommend it!"</p>
+                      <p class="testimonial-client">Jane Smith, Founder of Company B</p>
+                  </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="testimonial-item">
+                  <img src="https://via.placeholder.com/100" alt="Client 3" class="testimonial-image">
+                  <div class="testimonial-text">
+                      <p class="testimonial-message">"Thanks to this platform, our business reached a much wider audience and improved our conversion rate!"</p>
+                      <p class="testimonial-client">Alice Johnson, Marketing Manager of Firm C</p>
+                  </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="testimonial-item">
+                  <img src="https://via.placeholder.com/100" alt="Client 4" class="testimonial-image">
+                  <div class="testimonial-text">
+                      <p class="testimonial-message">"Our customer base has grown tremendously, and the support has been fantastic!"</p>
+                      <p class="testimonial-client">Robert Brown, Director at Startup D</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </section>
-
-
-
+  
+  
     <!--footer-->
   <!-- Remove the container if you want to extend the Footer to full width. -->
  <!--<div class="container my-5">-->
@@ -238,7 +337,7 @@
           <h5 class="text-uppercase mb-4"></h5>
           
 
-          <p class="color">
+          <p id="about" class="color">
             Discover the best ads in the city for restaurants, real estate, services, and more! Connect with trusted businesses and find amazing deals right near you.
           </p>
 
@@ -316,12 +415,13 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2024 Copyright. City Ads. All Rights Reserved.
+    <div  class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © <span id="demo"></span> Copyright. City Ads. All Rights Reserved.
       <a class="text-white" href="#" >cityads@gmail.com</a>
     </div>
     <!-- Copyright -->
   </footer>
+
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

@@ -23,3 +23,8 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+// footer date
+const d = new Date();
+document.getElementById("demo").innerHTML = d.getFullYear();
+
+
